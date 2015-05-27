@@ -52,8 +52,8 @@ generate_snippets() {
         local new_snippets_file=$result_dir/"`basename "$file" .gitignore`.snippets"
         echo "snippet $new_snippets_name" > $new_snippets_file
         echo "    ### $new_snippets_name ###" >> $new_snippets_file
-        while read line ; do
-            echo "    $line" >> $new_snippets_file
+        while read -r line ; do
+            echo -e "    $line" >> $new_snippets_file
         done < $file
     done
 }
