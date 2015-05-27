@@ -1,9 +1,6 @@
 snippet TeX
-    ##
-    Core
-    latex/pdflatex
-    auxiliary
-    files:
+    ### TeX ###
+    ## Core latex/pdflatex auxiliary files:
     *.aux
     *.lof
     *.log
@@ -11,32 +8,16 @@ snippet TeX
     *.fls
     *.out
     *.toc
-    ##
-    Intermediate
-    documents:
+    
+    ## Intermediate documents:
     *.dvi
     *-converted-to.*
-    #
-    these
-    rules
-    might
-    exclude
-    image
-    files
-    for
-    figures
-    etc.
-    #
-    *.ps
-    #
-    *.eps
-    #
-    *.pdf
-    ##
-    Bibliography
-    auxiliary
-    files
-    (bibtex/biblatex/biber):
+    # these rules might exclude image files for figures etc.
+    # *.ps
+    # *.eps
+    # *.pdf
+    
+    ## Bibliography auxiliary files (bibtex/biblatex/biber):
     *.bbl
     *.bcf
     *.blg
@@ -44,39 +25,31 @@ snippet TeX
     *-blx.bib
     *.brf
     *.run.xml
-    ##
-    Build
-    tool
-    auxiliary
-    files:
+    
+    ## Build tool auxiliary files:
     *.fdb_latexmk
     *.synctex
     *.synctex.gz
     *.synctex.gz(busy)
     *.pdfsync
-    ##
-    Auxiliary
-    and
-    intermediate
-    files
-    from
-    other
-    packages:
-    #
-    algorithms
+    
+    ## Auxiliary and intermediate files from other packages:
+    
+    # algorithms
     *.alg
     *.loa
-    #
-    achemso
+    
+    # achemso
     acs-*.bib
-    #
-    amsthm
+    
+    # amsthm
     *.thm
-    #
-    beamer
+    
+    # beamer
     *.nav
     *.snm
     *.vrb
+    
     #(e)ledmac/(e)ledpar
     *.end
     *.[1-9]
@@ -91,65 +64,65 @@ snippet TeX
     *.eledsec[1-9][0-9]R
     *.eledsec[1-9][0-9][0-9]
     *.eledsec[1-9][0-9][0-9]R
-    #
-    glossaries
+    
+    # glossaries
     *.acn
     *.acr
     *.glg
     *.glo
     *.gls
-    #
-    gnuplottex
+    
+    # gnuplottex
     *-gnuplottex-*
-    #
-    hyperref
+    
+    # hyperref
     *.brf
-    #
-    knitr
+    
+    # knitr
     *-concordance.tex
     *.tikz
     *-tikzDictionary
-    #
-    listings
+    
+    # listings
     *.lol
-    #
-    makeidx
+    
+    # makeidx
     *.idx
     *.ilg
     *.ind
     *.ist
-    #
-    minitoc
+    
+    # minitoc
     *.maf
     *.mtc
     *.mtc0
-    #
-    minted
+    
+    # minted
     _minted*
     *.pyg
-    #
-    morewrites
+    
+    # morewrites
     *.mw
-    #
-    nomencl
+    
+    # nomencl
     *.nlo
-    #
-    sagetex
+    
+    # sagetex
     *.sagetex.sage
     *.sagetex.py
     *.sagetex.scmd
-    #
-    sympy
+    
+    # sympy
     *.sout
     *.sympy
     sympy-plots-for-*.tex/
-    #
-    todonotes
+    
+    # todonotes
     *.tdo
-    #
-    xindy
+    
+    # xindy
     *.xdy
-    #
-    WinEdt
+    
+    # WinEdt
     *.bak
     *.sav

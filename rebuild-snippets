@@ -49,11 +49,12 @@ generate_snippets() {
     local result_dir=$2
     for file in $source_dir/*.gitignore ; do
         local new_snippets_name="`basename "$file" .gitignore`"
-        local new_snippets_file="`basename "$file" .gitignore`.snippets"
-        echo "snippet $new_snippets_name" > $result_dir/$new_snippets_file
-        for line in $(cat $file); do
-            echo "    $line" >> $result_dir/$new_snippets_file
-        done
+        local new_snippets_file=$result_dir/"`basename "$file" .gitignore`.snippets"
+        echo "snippet $new_snippets_name" > $new_snippets_file
+        echo "    ### $new_snippets_name ###" >> $new_snippets_file
+        while read line ; do
+            echo "    $line" >> $new_snippets_file
+        done < $file
     done
 }
 
