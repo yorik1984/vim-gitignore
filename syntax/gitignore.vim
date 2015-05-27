@@ -5,7 +5,7 @@
 
 " Quit when a (custom) syntax file was already loaded
 if exists("b:current_syntax")
-  finish
+    finish
 endif
 
 syn keyword	confTodo	contained TODO FIXME XXX
