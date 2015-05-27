@@ -5,31 +5,21 @@ About
 -----
 
 This plugin provides syntax highlighting, code snippets
-(using [snipMate](https://github.com/msanders/snipmate.vim))
-based on https://github.com/github/gitignore snippets
-and supporing of tComment for `.gitignore` files in Vim.
-
-![gitignore.vim with AutoComplPop](http://i.imgur.com/7WeBUds.png)
+(using [snipMate][1], [neosnippet][2], or [ultisnips][3])
+based on https://github.com/github/gitignore snippets.
 
 
 Requirements
 ------------
 
-* For using code snippets your must install
-[snipMate](https://github.com/msanders/snipmate.vim)
-* For more fun try out [AutoComplPop](http://www.vim.org/scripts/script.php?script_id=1879)
-* For commenting/uncommenting install
-[tComment](https://github.com/tomtom/tcomment_vim)
+* For using code snippets your should install
+[snipMate][1], [neosnippet][2], or [ultisnips][3].
 
 
 Installation ways
 -----------------
 
-* Using [pathogen](https://github.com/tpope/vim-pathogen)
-or [vundle](https://github.com/gmarik/vundle) from
-https://github.com/rdolgushin/gitignore.vim
-* Standard [Vim way](http://vimdoc.sourceforge.net/htmldoc/usr_05.html#add-plugin)
-from http://www.vim.org/scripts/script.php?script_id=4568
+* Using [pathogen][4], [vundle][5], or [neobundle][6]
 
 
 Usage
@@ -37,11 +27,40 @@ Usage
 
 ### Snippets
 
-Gitignore.vim contains an usual snipMate snippets. You can use it by
+Gitignore.vim contains an usual formatted snippets. You can use it by
 opening your `.gitignore` file, typing snippet name (for example, `Python`)
-and pressing `<Tab>` key.
+and pressing `<Tab>` key or other key defined in your vimrc.
 
-### Commenting
 
-For commenting you can use standard tComment `<C-_>` keymap.
+List
+-----
+The following contains a list of snippets in the `snippets` folder
 
+```shell
+actionscript,ada,agda,android,appceleratortitanium,appcode,archives,
+archlinuxpackages,autotools,bancha,basercms,bower,bricxcc,c,c++,cakephp,
+cfwheels,chefcookbook,clojure,cloud9,cmake,codeigniter,codekit,commonlisp,
+compass,composer,concrete5,coq,cvs,dart,darteditor,delphi,django,dotsettings,
+dreamweaver,drupal,eagle,eclipse,elasticbeanstalk,elisp,elixir,emacs,ensime,
+episerver,erlang,espresso,expressionengine,fancy,finale,flexbuilder,forcedotcom,
+freepascal,fuelphp,gcov,go,gradle,grails,gwt,haskell,intellij,java,jboss,jekyll,
+jetbrains,joe,joomla,justcode,jython,kate,kdevelop4,kohana,komodoedit,laravel,
+latex,lazarus,leiningen,lemonstand,lilypond,linux,lithium,magento,matlab,maven,
+mercurial,meteor,modelsim,monodevelop,nanoc,netbeans,node,notepadpp,objective-c,
+ocaml,opa,opencart,openfoam,oracleforms,osx,perl,ph7cms,phpstorm,playframework,
+plone,prestashop,processing,pycharm,python,qooxdoo,qt,quartus2,r,rails,redcar,
+rhodesrhomobile,ros,ruby,rubymine,rubymotion,sass,sbt,scala,scrivener,sdcc,
+seamgen,senchatouch,silverstripe,sketchup,stella,sublimetext,sugarcrm,svn,
+symfony,symfony2,symphonycms,tags,target3001,tarmainstallmate,tasm,tex,textmate,
+textpattern,turbogears2,typo3,unity,vagrant,vim,virtualenv,visualstudio,vvvv,
+waf,wakanda,webmethods,webstorm,windows,wordpress,xamarinstudio,xcode,xilinxise,
+yeoman,yii,zendframework
+```
+
+
+[1]: https://github.com/garbas/vim-snipmate
+[2]: https://github.com/Shougo/neosnippet.vim
+[3]: https://github.com/SirVer/ultisnips
+[4]: https://github.com/tpope/vim-pathogen
+[5]: https://github.com/gmarik/vundle
+[6]: https://github.com/Shougo/neobundle.vim

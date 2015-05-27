@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:	.gitignore
-" Maintainer:	Roman Dolgushin <rd@roman-dolgushin.ru>
-" URL:		http://github.com/rdolgushin/gitignore.vim
+" Maintainer:	gisphm <phmfk@hotmail.com>
+" URL:		https://github.com/gisphm/vim-gitignore
 
 " Quit when a (custom) syntax file was already loaded
 if exists("b:current_syntax")
