@@ -14,38 +14,48 @@ echo "*** Rebuilding started ***"
 
 # Preparing {{{
 
-  mkdir $build_dir
-  echo "$build_dir directory created"
+mkdir $build_dir
+echo "$build_dir directory created"
 
-  git clone --depth 1 https://github.com/github/gitignore.git $repo_dir
+git clone --depth 1 https://github.com/github/gitignore.git $repo_dir
 
 # }}}
 
 # Building {{{
 
-  for file_path in $repo_dir/*.gitignore
-  do
-    echo >> "$file_path"
-    mv "$file_path" $repo_dir/"`basename "$file_path" .gitignore`.snippets"
-  done
+mkdir -p $result_dir
 
-  for file_path in $repo_dir/Global/*.gitignore
-  do
+for file_path in $repo_dir/*.gitignore
+do
     echo >> "$file_path"
-    mv "$file_path" $repo_dir/Global/"`basename "$file_path" .gitignore`.snippets"
-  done
+    new_snippets_name="`basename "$file_path" .gitignore`"
+    new_snippets_file="`basename "$file_path" .gitignore`.snippets"
+    echo "snippet $new_snippets_name" > $result_dir/$new_snippets_file
+    for line in $(cat $file_path)
+    do
+        echo "    $line" >> $result_dir/$new_snippets_file
+    done
+done
 
-  rm -rf $result_dir/*
-  mv $repo_dir/* $result_dir
+for file_path in $repo_dir/Global/*.gitignore
+do
+    echo >> "$file_path"
+    new_snippets_name="`basename "$file_path" .gitignore`"
+    new_snippets_file="`basename "$file_path" .gitignore`.snippets"
+    echo "snippet $new_snippets_name" > $result_dir/$new_snippets_file
+    for line in $(cat $file_path)
+    do
+        echo "    $line" >> $result_dir/$new_snippets_file
+    done
+done
 
 # }}}
 
 # Clearing {{{
 
-  rm -rf build
-  echo "$build_dir directory removed"
+rm -rf build
+echo "$build_dir directory removed"
 
 # }}}
 
 echo "*** Rebuilding completed ***"
-
