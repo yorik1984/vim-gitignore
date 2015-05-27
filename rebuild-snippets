@@ -26,13 +26,13 @@ echo "*** Rebuilding started ***"
   for file_path in $repo_dir/*.gitignore
   do
     echo >> "$file_path"
-    mv "$file_path" $repo_dir/"`basename "$file_path" .gitignore`.snippet"
+    mv "$file_path" $repo_dir/"`basename "$file_path" .gitignore`.snippets"
   done
 
   for file_path in $repo_dir/Global/*.gitignore
   do
     echo >> "$file_path"
-    mv "$file_path" $repo_dir/Global/"`basename "$file_path" .gitignore`.snippet"
+    mv "$file_path" $repo_dir/Global/"`basename "$file_path" .gitignore`.snippets"
   done
 
   rm -rf $result_dir/*
