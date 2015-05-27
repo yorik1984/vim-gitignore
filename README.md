@@ -43,13 +43,13 @@ Usage
 opening your `.gitignore` file, typing snippet name (for example, `Python`)
 and pressing `<Tab>` key or other key defined in your vimrc.
 
-You can execute the script [rebuild-snippets][rebuild-snippets] to rebuild snippets
+You can execute the script [rebuild-snippets](rebuild-snippets) to rebuild snippets
 from gitignore files provided by github's [gitignore][7].
 
 
 List
 -----
-The following is the list of snippets in the [snippets][snippets/gitignore] folder
+The following is the list of snippets in the [snippets](snippets/gitignore) folder
 
 ```shell
 actionscript,ada,agda,android,appceleratortitanium,appcode,archives,
