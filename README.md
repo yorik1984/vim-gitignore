@@ -78,7 +78,7 @@ TODO
 Alternative Option
 --------------
 
-You can alse follow [gitignore.io][6] to generate `.gitignore` file in your project.
+You can also follow [gitignore.io][6] to generate `.gitignore` file in your project.
 
 
 Contributions
