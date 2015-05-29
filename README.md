@@ -75,7 +75,7 @@ yeoman,yii,zendframework
 TODO
 ----
 
-1. add indent file
+1. ✓ add indent file
 2. add more highlighting in syntax file
 
 Another Option
