@@ -12,3 +12,6 @@ setlocal noautoindent
 setlocal nosmartindent
 setlocal nocindent
 setlocal indentexpr=
+setlocal shiftwidth=0
+setlocal tabstop=0
+setlocal softtabstop=0
