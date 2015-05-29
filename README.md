@@ -1,23 +1,19 @@
 Vim gitignore plugin
 ====================
 
-About
------
-
 This plugin provides syntax highlighting and code snippets
-(using [snipMate][1], [neosnippet][2], or [ultisnips][3])
 based on github's [gitignore][7].
 
 
 Requirements
 ------------
 
-* For using code snippets your should install
-[snipMate][1], [neosnippet][2], or [ultisnips][3].
+* For using code snippets you should install
+[snipMate][1], [neosnippet][2], or [ultisnips][3] first.
 
 
-Installation ways
------------------
+Installation
+------------
 
 * Using [vundle][4], or [neobundle][5], or other options.
 
@@ -34,22 +30,8 @@ Installation ways
     ```
 
 
-Usage
------
-
-### Snippets
-
-`vim-gitignore` contains a set of snippets. You can use it by
-opening your `.gitignore` file, typing snippet name (for example, `Python`)
-and pressing `<Tab>` key or other key defined in your vimrc.
-
-You can execute the script [rebuild-snippets](rebuild-snippets) to rebuild snippets
-from gitignore files provided by github's [gitignore][7].
-
-
-List
------
-The following is the list of snippets in the [snippets](snippets/gitignore) folder
+[Snippets](snippets/gitignore) List
+-----------------------------------
 
 ```shell
 actionscript,ada,agda,android,appceleratortitanium,appcode,archives,
@@ -72,16 +54,38 @@ waf,wakanda,webmethods,webstorm,windows,wordpress,xamarinstudio,xcode,xilinxise,
 yeoman,yii,zendframework
 ```
 
+* If you find that the snippets are not keeping up with the [gitignore][7] repo,
+you can manually execute the script [rebuild-snippets](rebuild-snippets)
+to rebuild snippets.
+
+
+Snippets Usage
+--------------
+
+* `vim-gitignore` contains a set of snippets. To use snippets,
+just open your `.gitignore` file, type in proper snippet name
+(for example, `Python`, or `Vim`)
+and press `<Tab>` key or other key defined in your vimrc,
+which will expand snippets.
+
+
 TODO
 ----
 
 1. ✓ add indent file
 2. add more highlighting in syntax file
 
-Another Option
+Alternative Option
 --------------
 
 You can alse follow [gitignore.io][6] to generate `.gitignore` file in your project.
+
+
+Contributions
+-------------
+
+Any issue or pull request is welcome.
+
 
 License
 --------
