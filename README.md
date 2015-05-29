@@ -72,6 +72,12 @@ waf,wakanda,webmethods,webstorm,windows,wordpress,xamarinstudio,xcode,xilinxise,
 yeoman,yii,zendframework
 ```
 
+TODO
+----
+
+1. ✓ add indent file
+2. add more highlighting in syntax file
+
 Another Option
 --------------
 

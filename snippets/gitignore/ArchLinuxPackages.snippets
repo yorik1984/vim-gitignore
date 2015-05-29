@@ -1,16 +1,17 @@
-snippet ArchLinuxPackages
-    ### ArchLinuxPackages ###
-    *.tar
-    *.tar.*
-    *.zip
-    *.tgz
-    *.log
-    *.log.*
-    *.sig
-    
-    # AUR metadata
-    .AURINFO
-    .SRCINFO
-    
-    pkg/
-    src/
+snippet ArchLinuxPackages Gitignore Template
+        ### ArchLinuxPackages ###
+        *.tar
+        *.tar.*
+        *.zip
+        *.tgz
+        *.log
+        *.log.*
+        *.sig
+        
+        # AUR metadata
+        .AURINFO
+        .SRCINFO
+        
+        pkg/
+        src/
+        ${0}
