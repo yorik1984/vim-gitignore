@@ -2,7 +2,7 @@ Vim gitignore plugin
 ====================
 
 This plugin provides syntax highlighting and code snippets
-based on github's [gitignore][7].
+from github's [gitignore][7].
 
 
 Requirements
