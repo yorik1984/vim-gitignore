@@ -8,7 +8,7 @@ if exists("b:did_indent")
 endif
 let b:did_indent = 1
 
+setlocal noautoindent
 setlocal nosmartindent
+setlocal nocindent
 setlocal indentexpr=
-setlocal cindent
-setlocal cinkeys-=0#
