@@ -1,6 +1,14 @@
 snippet Xcode Gitignore Template
         ### Xcode ###
+        # Xcode
+        #
+        # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+        
+        ## Build generated
         build/
+        DerivedData
+        
+        ## Various settings
         *.pbxuser
         !default.pbxuser
         *.mode1v3
@@ -10,8 +18,9 @@ snippet Xcode Gitignore Template
         *.perspectivev3
         !default.perspectivev3
         xcuserdata
+        
+        ## Other
         *.xccheckout
         *.moved-aside
-        DerivedData
         *.xcuserstate
         ${0}

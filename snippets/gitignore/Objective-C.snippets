@@ -2,7 +2,13 @@ snippet Objective-C Gitignore Template
         ### Objective-C ###
         # Xcode
         #
+        # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+        
+        ## Build generated
         build/
+        DerivedData
+        
+        ## Various settings
         *.pbxuser
         !default.pbxuser
         *.mode1v3
@@ -12,12 +18,15 @@ snippet Objective-C Gitignore Template
         *.perspectivev3
         !default.perspectivev3
         xcuserdata
+        
+        ## Other
         *.xccheckout
         *.moved-aside
-        DerivedData
+        *.xcuserstate
+        
+        ## Obj-C/Swift specific
         *.hmap
         *.ipa
-        *.xcuserstate
         
         # CocoaPods
         #
@@ -26,4 +35,11 @@ snippet Objective-C Gitignore Template
         # http://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
         #
         #Pods/
+        
+        # Carthage
+        #
+        # Add this line if you want to avoid checking in source code from Carthage dependencies.
+        # Carthage/Checkouts
+        
+        Carthage/Build
         ${0}
