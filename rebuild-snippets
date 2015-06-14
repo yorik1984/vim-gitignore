@@ -46,16 +46,12 @@ echo "removing old snippets directory if it exists"
 
 echo "creating new snippets from gitignore files"
 mkdir -p $snippets_dir
-echo -e "# Snippets List" > $list_file
-echo -e "\`\`\`" >> $list_file
 
 generate_snippets() {
     local source_dir=$1
     local snippets_dir=$2
     for file in $source_dir/*.gitignore ; do
         local new_snippets_name="`basename "$file" .gitignore`"
-        echo -e "$new_snippets_name" >> $list_file
-
         local new_snippets_file=$snippets_dir/"`basename "$file" .gitignore`.snippets"
 
         echo "snippet $new_snippets_name Gitignore Template" > $new_snippets_file
@@ -67,9 +63,20 @@ generate_snippets() {
     done
 }
 
+generate_list() {
+    local snippets_dir=$1
+    echo -e "# Snippets List" > $list_file
+    echo -e "\`\`\`" >> $list_file
+    for file in $snippets_dir/*.snippets; do
+        local snippets_name="`basename "$file" .snippets`"
+        echo "$snippets_name" >> $list_file
+    done
+    echo -e "\`\`\`" >> $list_file
+}
+
 generate_snippets $repo_dir $snippets_dir
 generate_snippets $repo_dir/Global $snippets_dir
-echo -e "\`\`\`" >> $list_file
+generate_list $snippets_dir
 
 # }}}
 
