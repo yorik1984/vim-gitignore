@@ -47,6 +47,7 @@ echo "removing old snippets directory if it exists"
 echo "creating new snippets from gitignore files"
 mkdir -p $snippets_dir
 echo -e "# Snippets List" > $list_file
+echo -e "\`\`\`" >> $list_file
 
 generate_snippets() {
     local source_dir=$1
@@ -68,6 +69,7 @@ generate_snippets() {
 
 generate_snippets $repo_dir $snippets_dir
 generate_snippets $repo_dir/Global $snippets_dir
+echo -e "\`\`\`" >> $list_file
 
 # }}}
 
