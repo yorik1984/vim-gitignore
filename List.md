@@ -55,6 +55,7 @@ FuelPHP
 Gcov
 GitBook
 Go
+GPG
 Gradle
 Grails
 GWT
