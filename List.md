@@ -34,6 +34,7 @@ Delphi
 DM
 Dreamweaver
 Drupal
+D
 Eagle
 Eclipse
 EiffelStudio
@@ -106,6 +107,7 @@ Opa
 OpenCart
 OracleForms
 OSX
+Otto
 Packer
 Perl
 Phalcon
