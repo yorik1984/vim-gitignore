@@ -40,6 +40,7 @@ Eclipse
 EiffelStudio
 Elisp
 Elixir
+Elm
 Emacs
 Ensime
 EPiServer
