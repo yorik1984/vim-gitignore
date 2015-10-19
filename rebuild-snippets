@@ -41,7 +41,7 @@ git clone --depth 1 https://github.com/github/gitignore.git $repo_dir
 # Building {{{
 
 echo "removing old snippets directory if it exists"
-[[ -d "$snippets_dir" ]] && rm -rf snippets
+[[ -d "$snippets_dir" ]] && rm -rf $snippets_dir
 [[ -f "$list_file" ]] && rm $list_file
 
 echo "creating new snippets from gitignore files"
