@@ -24,6 +24,7 @@ build_dir="build"
 repo_dir_name="github-gitignore"
 repo_dir="$build_dir/$repo_dir_name"
 snippets_dir="snippets/gitignore"
+neosnippets_dir="neosnippets/gitignore"
 list_file="List.md"
 
 echo "*** Rebuilding started ***"
@@ -42,19 +43,25 @@ git clone --depth 1 https://github.com/github/gitignore.git $repo_dir
 
 echo "removing old snippets directory if it exists"
 [[ -d "$snippets_dir" ]] && rm -rf $snippets_dir
+[[ -d "$neosnippets_dir" ]] && rm -rf $neosnippets_dir
 [[ -f "$list_file" ]] && rm $list_file
 
 echo "creating new snippets from gitignore files"
 mkdir -p $snippets_dir
+mkdir -p $neosnippets_dir
 
 generate_snippets() {
     local source_dir=$1
     local snippets_dir=$2
+    local snippets_ext=$3
     for file in $source_dir/*.gitignore ; do
         local new_snippets_name="`basename "$file" .gitignore`"
-        local new_snippets_file=$snippets_dir/"`basename "$file" .gitignore`.snippets"
+        local new_snippets_file=$snippets_dir/"`basename "$file" .gitignore`.$snippets_ext"
 
         echo "snippet $new_snippets_name Gitignore Template" > $new_snippets_file
+        if [[ $snippets_ext = "snip" ]]; then
+            echo "abbr    $new_snippets_name" >> $new_snippets_file
+        fi
         echo "        ### $new_snippets_name ###" >> $new_snippets_file
         while read -r line ; do
             echo -e "        $line" >> $new_snippets_file
@@ -74,9 +81,11 @@ generate_list() {
     echo -e "\`\`\`" >> $list_file
 }
 
-generate_snippets $repo_dir $snippets_dir
-generate_snippets $repo_dir/Global $snippets_dir
+generate_snippets $repo_dir $snippets_dir "snippets"
+generate_snippets $repo_dir/Global $snippets_dir "snippets"
 generate_list $snippets_dir
+generate_snippets $repo_dir $neosnippets_dir "snip"
+generate_snippets $repo_dir/Global $neosnippets_dir "snip"
 
 # }}}
 
