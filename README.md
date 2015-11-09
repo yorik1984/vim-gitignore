@@ -53,8 +53,10 @@ which will expand snippets.
 TODO
 ----
 
-1. ✓ add indent file
-2. add more highlighting in syntax file
+* [x] add indent file
+* [ ] add more highlighting in syntax file
+    + [x] basic highlight
+    + [ ] self-defined color
 
 Alternative Option
 --------------
