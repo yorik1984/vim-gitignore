@@ -62,7 +62,9 @@ generate_snippets() {
         local new_snippets_name="`basename "$file" .gitignore`"
         local new_snippets_file=$snippets_dir/"`basename "$file" .gitignore`.$snippets_ext"
         if [[ $snippets_dir = $ultisnips_dir ]]; then
-            echo "snippet $new_snippets_name \"$new_snippets_name Gitignore Template\"" > $new_snippets_file
+            echo "priority -50" > $new_snippets_file
+            echo "" >> $new_snippets_file
+            echo "snippet $new_snippets_name \"$new_snippets_name Gitignore Template\"" >> $new_snippets_file
         else
             echo "snippet $new_snippets_name Gitignore Template" > $new_snippets_file
         fi
