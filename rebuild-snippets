@@ -74,8 +74,8 @@ generate_snippets() {
             echo -e "$snippets_tab$line" >> $new_snippets_file
         done < $file
         if [[ $snippets_dir = $ultisnips_dir ]]; then
-            echo "endsnippet" >> $new_snippets_file
             echo -e "$snippets_tab\$0" >> $new_snippets_file
+            echo "endsnippet" >> $new_snippets_file
         else
             echo -e "$snippets_tab\${0}" >> $new_snippets_file
         fi
