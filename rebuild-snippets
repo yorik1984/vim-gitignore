@@ -23,7 +23,7 @@
 build_dir="build"
 repo_dir_name="github-gitignore"
 repo_dir="$build_dir/$repo_dir_name"
-snipmate_dir="snippets"
+snipmate_dir="snippets/gitignore"
 neosnippets_dir="neosnippets/gitignore"
 ultisnips_dir="UltiSnips/gitignore"
 list_file="List.md"
@@ -60,12 +60,7 @@ generate_snippets() {
     local snippets_tab=$4
     for file in $source_dir/*.gitignore ; do
         local new_snippets_name="`basename "$file" .gitignore`"
-
-        if [[ $snippets_dir = $snipmate_dir ]]; then
-            local new_snippets_file=$snippets_dir/gitignore_$new_snippets_name.$snippets_ext
-        else
-            local new_snippets_file=$snippets_dir/$new_snippets_name.$snippets_ext
-        fi
+        local new_snippets_file=$snippets_dir/$new_snippets_name.$snippets_ext
         if [[ $snippets_dir = $ultisnips_dir ]]; then
             echo "priority -50" > $new_snippets_file
             echo "" >> $new_snippets_file
