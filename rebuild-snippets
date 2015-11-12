@@ -36,7 +36,7 @@ mkdir $build_dir
 echo "$build_dir directory created"
 
 echo "cloning gitignore from github"
-git clone --depth 1 https://github.com/github/gitignore.git $repo_dir
+git clone --quiet --depth 1 https://github.com/github/gitignore.git $repo_dir
 
 # }}}
 
@@ -97,11 +97,14 @@ generate_list() {
 
 generate_snippets $repo_dir $neosnippets_dir "snip" "        "
 generate_snippets $repo_dir/Global $neosnippets_dir "snip" "        "
+echo "neosnippets-snippets is successfully created"
 generate_list $neosnippets_dir
 generate_snippets $repo_dir $snipmate_dir "snippets" "        "
 generate_snippets $repo_dir/Global $snipmate_dir "snippets" "        "
+echo "snipmate-snippets is successfully created"
 generate_snippets $repo_dir $ultisnips_dir "snippets" ""
 generate_snippets $repo_dir/Global $ultisnips_dir "snippets" ""
+echo "ultisnips-snippets is successfully created"
 
 
 # }}}
