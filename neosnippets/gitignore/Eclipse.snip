@@ -1,7 +1,7 @@
 snippet Eclipse Gitignore Template
 abbr    Eclipse
         ### Eclipse ###
-        *.pydevproject
+        
         .metadata
         bin/
         tmp/
@@ -22,7 +22,10 @@ abbr    Eclipse
         # Locally stored "Eclipse launch configurations"
         *.launch
         
-        # CDT-specific
+        # PyDev specific (Python IDE for Eclipse)
+        *.pydevproject
+        
+        # CDT-specific (C/C++ Development Tooling)
         .cproject
         
         # JDT-specific (Eclipse Java Development Tools)
@@ -31,7 +34,7 @@ abbr    Eclipse
         # Java annotation processor (APT)
         .factorypath
         
-        # PDT-specific
+        # PDT-specific (PHP Development Tools)
         .buildpath
         
         # sbteclipse plugin
