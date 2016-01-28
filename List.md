@@ -12,6 +12,7 @@ ArchLinuxPackages
 Autotools
 BricxCC
 CakePHP
+Calabash
 CFWheels
 ChefCookbook
 Clojure
