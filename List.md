@@ -74,7 +74,7 @@ JetBrains
 Joomla
 Kate
 KDevelop4
-KiCAD
+KiCad
 Kohana
 LabVIEW
 Laravel
