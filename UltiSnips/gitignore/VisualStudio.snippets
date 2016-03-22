@@ -167,9 +167,6 @@ csx/
 ecf/
 rcf/
 
-# Microsoft Azure ApplicationInsights config file
-ApplicationInsights.config
-
 # Windows Store app package directories and files
 AppPackages/
 BundleArtifacts/
@@ -192,6 +189,10 @@ ClientBin/
 *.publishsettings
 node_modules/
 orleans.codegen.cs
+
+# Since there are multiple workflows, uncomment next line to ignore bower_components
+# (https://github.com/github/gitignore/pull/1529#issuecomment-104372622)
+#bower_components/
 
 # RIA/Silverlight projects
 Generated_Code/
@@ -238,6 +239,7 @@ _Pvt_Extensions
 
 # Paket dependency manager
 .paket/paket.exe
+paket-files/
 
 # FAKE - F# Make
 .fake/

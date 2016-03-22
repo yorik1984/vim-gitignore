@@ -34,6 +34,7 @@ Dart
 Delphi
 DM
 Dreamweaver
+Dropbox
 Drupal
 D
 Eagle
@@ -131,12 +132,14 @@ Rust
 Sass
 SBT
 Scala
+Scheme
 SCons
 Scrivener
 Sdcc
 SeamGen
 SketchUp
 SlickEdit
+Smalltalk
 Stella
 SublimeText
 SugarCRM
@@ -146,6 +149,7 @@ Symfony
 SymphonyCMS
 SynopsysVCS
 Tags
+Terraform
 TeX
 TextMate
 Textpattern
