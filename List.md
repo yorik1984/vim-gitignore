@@ -73,6 +73,7 @@ JDeveloper
 Jekyll
 JetBrains
 Joomla
+Julia
 Kate
 KDevelop4
 KiCad
