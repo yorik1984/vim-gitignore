@@ -10,6 +10,7 @@ AppEngine
 Archives
 ArchLinuxPackages
 Autotools
+Bazaar
 BricxCC
 CakePHP
 Calabash
