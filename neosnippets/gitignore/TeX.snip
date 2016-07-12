@@ -22,6 +22,9 @@ abbr    TeX
         # *.eps
         # *.pdf
         
+        ## Generated if empty string is given at "Please type another file name for output:"
+        .pdf
+        
         ## Bibliography auxiliary files (bibtex/biblatex/biber):
         *.bbl
         *.bcf
@@ -34,6 +37,7 @@ abbr    TeX
         ## Build tool auxiliary files:
         *.fdb_latexmk
         *.synctex
+        *.synctex(busy)
         *.synctex.gz
         *.synctex.gz(busy)
         *.pdfsync
@@ -130,6 +134,9 @@ abbr    TeX
         *.sagetex.sage
         *.sagetex.py
         *.sagetex.scmd
+        
+        # scrwfile
+        *.wrt
         
         # sympy
         *.sout
