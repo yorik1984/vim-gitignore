@@ -90,6 +90,7 @@ Linux
 Lithium
 Lua
 LyX
+macOS
 Magento
 Matlab
 Maven
@@ -111,7 +112,6 @@ OCaml
 Opa
 OpenCart
 OracleForms
-OSX
 Otto
 Packer
 Perl
