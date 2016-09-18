@@ -5,6 +5,7 @@ Ada
 Agda
 Android
 Anjuta
+Ansible
 AppceleratorTitanium
 AppEngine
 Archives
