@@ -11,6 +11,11 @@ snippet C "C Gitignore Template"
 *.obj
 *.elf
 
+# Linker output
+*.ilk
+*.map
+*.exp
+
 # Precompiled Headers
 *.gch
 *.pch
@@ -38,5 +43,15 @@ snippet C "C Gitignore Template"
 # Debug files
 *.dSYM/
 *.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
 $0
 endsnippet
