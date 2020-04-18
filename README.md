@@ -2,7 +2,7 @@ Vim gitignore plugin
 ====================
 
 * This plugin provides syntax highlighting and up-to-date code snippets for `.gitignore` file.
-* The snippets are based on github's [gitignore][7] files.
+* This fork does not contain any snippets to mess up your UltiSnips config
 
 
 Requirements
@@ -28,27 +28,6 @@ Installation
     ```VimL
      NeoBundle 'gisphm/vim-gitignore'
     ```
-
-
-[Snippets](snippets/gitignore) List
------------------------------------
-
-* See the list in [List](List.md).
-
-* If you find that the snippets are not keeping up with the [gitignore][7] repo,
-you can manually execute the script [rebuild-snippets](rebuild-snippets)
-to rebuild snippets.
-
-
-Snippets Usage
---------------
-
-* `vim-gitignore` contains a set of snippets. To use snippets,
-just open your `.gitignore` file, type in proper snippet name
-(for example, `Python`, or `Vim`)
-and press `<Tab>` key or other key defined in your vimrc,
-which will expand snippets.
-
 
 TODO
 ----
