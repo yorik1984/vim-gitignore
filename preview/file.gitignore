@@ -1,0 +1,35 @@
+# TODO FIXME XXX Comment
+
+# files
+*.filename
+
+# folders
+folder/
+folder*/
+folder/folder/
+folder/**
+folder/file
+/file.*
+**/file
+./file/*
+~/.gitconfig
+
+# files 
+*.filename
+*.?filename
+*-filename-*
+*file.type
+_file*
+*.[1-9]
+*.[1-9][0-9]
+*.[1-9]*
+*.[1-9]filename
+*.file[1-9]name
+*~[0-9]*
+
+# exclude
+\!important!.type
+/*
+!/file
+/folder/*
+!/folder/bar
