@@ -1,56 +1,47 @@
-Vim gitignore plugin
-====================
+# ⌨️ Vim  and neovim `.gitignore` plugin
+
 
 * This plugin provides syntax highlighting and up-to-date code snippets for `.gitignore` file.
-* This fork does not contain any snippets to mess up your UltiSnips config
 
 
-Requirements
-------------
+### 📦 Installation
 
-* For using code snippets you should install
-[snipMate][1], [neosnippet][2], or [ultisnips][3] first.
+Install via your favorite package manager:
 
+#### [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
-Installation
-------------
+```lua
+use 'yorik1984/vim-gitignore'
+```
 
-* Using [vundle][4], or [neobundle][5], or other options.
-
-* [vundle][4]
-
-    ```VimL
-     Plugin 'gisphm/vim-gitignore'
-    ```
-
-* [neobundle][5]
-
-    ```VimL
-     NeoBundle 'gisphm/vim-gitignore'
-    ```
-
-TODO
-----
-
-* [x] add indent file
-* [ ] add more highlighting in syntax file
-    + [x] basic highlight
-    + [ ] self-defined color
-
-Alternative Option
---------------
-
-You can also follow [gitignore.io][6] to generate `.gitignore` file in your project.
+####  [vim-plug](https://github.com/junegunn/vim-plug)
 
 
-Contributions
--------------
+```Vim
+ Plug 'yorik1984/vim-gitignore'
+```
+
+### 🛠️ TODO
+
+- [x] add indent file
+- [x] add more highlighting in syntax file
+    - [x] basic highlight
+    - [x] self-defined color
+
+### ℹ️ Alternative Option
+
+You can also follow [gitignore.io][2] to generate `.gitignore` file in your project.
+
+### 🔗 Reference
+
+* [gitignore-grabber.nvim][3] - A plugin to to copy/populate your `.gitignore` from [github/gitignore](https://github.com/github/gitignore) project with support for [fzf](https://github.com/junegunn/fzf).
+
+### ❔ Contributions
 
 Any issue or pull request is welcome.
 
+### ©️ License
 
-License
---------
 > Copyright 2015 gisphm <phmfk@hotmail.com>
 >
 > Licensed under the Apache License, Version 2.0 (the "License");
@@ -66,10 +57,6 @@ License
 > limitations under the License.
 
 
-[1]: https://github.com/garbas/vim-snipmate
-[2]: https://github.com/Shougo/neosnippet.vim
-[3]: https://github.com/SirVer/ultisnips
-[4]: https://github.com/gmarik/vundle
-[5]: https://github.com/Shougo/neobundle.vim
-[6]: https://www.gitignore.io
-[7]: https://github.com/github/gitignore
+[1]: https://github.com/junegunn/vim-plug
+[2]: https://www.gitignore.io
+[3]: https://github.com/antonk52/gitignore-grabber.nvim
