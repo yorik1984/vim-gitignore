@@ -2,7 +2,7 @@
 
 This plugin provides syntax highlighting for `.gitignore` file.
 
-There are highlight example with different themes:
+There are highlight [example file](preview/file.gitignore) with different themes:
 
 + [newpaper.nvim](https://github.com/yorik1984/newpaper.nvim) 
 + [gruvbox-material](https://github.com/sainnhe/gruvbox-material)
