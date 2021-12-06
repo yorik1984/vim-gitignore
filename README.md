@@ -1,8 +1,14 @@
 # ⌨️ Vim  and neovim `.gitignore` plugin
 
+This plugin provides syntax highlighting for `.gitignore` file.
 
-* This plugin provides syntax highlighting and up-to-date code snippets for `.gitignore` file.
+There are highlight example with different themes:
 
++ [newpaper.nvim](https://github.com/yorik1984/newpaper.nvim) 
++ [gruvbox-material](https://github.com/sainnhe/gruvbox-material)
++ [tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
+
+![syntax_preview](https://user-images.githubusercontent.com/1559192/144772696-1714739e-03c4-4cfb-800f-55dfe56a4fdd.png)
 
 ### 📦 Installation
 
@@ -16,17 +22,9 @@ use 'yorik1984/vim-gitignore'
 
 ####  [vim-plug](https://github.com/junegunn/vim-plug)
 
-
 ```Vim
  Plug 'yorik1984/vim-gitignore'
 ```
-
-### 🛠️ TODO
-
-- [x] add indent file
-- [x] add more highlighting in syntax file
-    - [x] basic highlight
-    - [x] self-defined color
 
 ### ℹ️ Alternative Option
 
@@ -55,7 +53,6 @@ Any issue or pull request is welcome.
 > WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 > See the License for the specific language governing permissions and
 > limitations under the License.
-
 
 [1]: https://github.com/junegunn/vim-plug
 [2]: https://www.gitignore.io

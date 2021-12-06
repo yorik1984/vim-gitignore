@@ -29,7 +29,6 @@ _file*
 
 # exclude
 \!important!.type
-/*
 !/file
 /folder/*
-!/folder/bar
+!/folder/file
