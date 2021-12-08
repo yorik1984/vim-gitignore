@@ -3,4 +3,7 @@
 " Author:       gisphm <phmfk@hotmail.com>
 " URL:          https://github.com/gisphm/vim-gitignore
 
-au BufNewFile,BufRead *.gitignore set filetype=gitignore
+augroup gitignore
+    autocmd!
+    autocmd BufNewFile,BufRead *.gitignore set filetype=gitignore
+augroup end
